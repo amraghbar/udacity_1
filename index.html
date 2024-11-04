@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تطبيق السفر</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="app-title">تطبيق السفر</h1>
+        <button id="language-toggle">English</button> <!-- زر تغيير اللغة -->
+
+        <div class="content">
+            <form id="trip-form">
+                <label for="destination" id="destination-label">الوجهات (افصل بينها بفاصلة):</label>
+                <input type="text" id="destination" required placeholder="مثال: باريس, لندن">
+
+                <label for="start-date" id="start-date-label">تاريخ البدء:</label>
+                <input type="date" id="start-date" required>
+
+                <label for="end-date" id="end-date-label">تاريخ الانتهاء:</label>
+                <input type="date" id="end-date" required>
+
+                <label for="hotel" id="hotel-label">اسم الفندق:</label>
+                <input type="text" id="hotel">
+
+                <label for="flight" id="flight-label">رقم الرحلة:</label>
+                <input type="text" id="flight">
+
+                <button type="submit">أضف الرحلة</button>
+            </form>
+
+            <div id="trip-list">
+                <h2 id="trip-list-title">الرحلات المخطط لها:</h2>
+                <ul id="trips"></ul>
+            </div>
+        </div>
+
+        <button id="print-btn">طباعة الرحلات</button> <!-- زر الطباعة -->
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
