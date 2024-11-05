@@ -1,0 +1,31 @@
+{
+  "name": "ud",
+  "version": "1.0.0",
+  "description": "Travel Application using Webpack and Express",
+  "main": "webpack.config.js",
+  "scripts": {
+    "start": "node src/server/server.js",
+    "build": "webpack --config webpack.config.js",
+    "dev": "nodemon src/server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "babel-loader": "^9.2.1",
+    "css-loader": "^7.1.2",
+    "express": "^4.21.1",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.96.1",
+    "webpack-cli": "^5.1.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "babel": {
+    "presets": ["@babel/preset-env"]
+  }
+}
